@@ -84,4 +84,4 @@ GGGECh4g0eki3qjwYDr78oFlb376wr/JC2Vaft2uJYfRnLhU+zH6k+PxON7zh7g7TlPR0x
 >`.pub` this would be the private SSH key that you would use on github actions
 
 ### Make sure to save this keys somewhere safe and easy for you to access
-> You'll be needing to start learning how to use google spread sheets, excel, and etc as you going to need to save a lot of accounts/credentials in the near future > ┐(´д｀)┌ <
+> You'll be needing to start learning how to use google spread sheets > ┐(´д｀)┌ <
