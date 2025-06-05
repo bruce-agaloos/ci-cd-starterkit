@@ -83,6 +83,6 @@ GGGECh4g0eki3qjwYDr78oFlb376wr/JC2Vaft2uJYfRnLhU+zH6k+PxON7zh7g7TlPR0x
 ```
 >`.pub` this would be the private SSH key that you would use on github actions
 
-### Make sure to save this keys somewhere safe and easy for you to access
+### Make sure to save these keys somewhere safe and easy for you to access
 to save you from the troubles of having to generate a new one and updating your secrets.
 > Who would have thought I would be searching on how to use google spread sheets > ┐(´д｀)┌ 
