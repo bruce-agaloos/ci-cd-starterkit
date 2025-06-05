@@ -13,7 +13,7 @@ Simply open a terminal of you choice and type:
 ssh-keygen
 ```
 
-spam enter and your going to see something like this
+spam enter and you should see something like this
 ```
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (YOUR-DEVICE/.ssh/id_ed25519):
