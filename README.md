@@ -1,6 +1,6 @@
 # Getting Started
 
-This repository is a compilation of scripts and essential files that your going to need for deploying on staging or production environments.
+This repository is a compilation of scripts and files needed for deploying on staging or production environments.
 
 Feel free to use this as a guide to get you started, have a better prompt, and modify it to you own needs. 
 
