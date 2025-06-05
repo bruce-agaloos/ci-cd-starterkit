@@ -8,7 +8,7 @@ Feel free to use this as a guide to get you started, have a better prompt, and m
 
 To get started, you'll going to need to generate your very own `ssh key` as this would serve as a password/credentials of your device.
 
-Simply open a terminal of you choice and type:
+Simply open a terminal of your choice and type:
 ```
 ssh-keygen
 ```
