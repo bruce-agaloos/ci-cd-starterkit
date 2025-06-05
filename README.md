@@ -81,7 +81,7 @@ GGGECh4g0eki3qjwYDr78oFlb376wr/JC2Vaft2uJYfRnLhU+zH6k+PxON7zh7g7TlPR0x
 3ManV/6/RJ71F1btJ8QqQQQQE2FzdXMtbm90ZWJvb2tAQnJ1Y2UBAg==
 -----END OPENSSH PRIVATE KEY-----
 ```
->`.pub` this would be the private SSH key that you would use on github actions
+>`.pub` this would be the private SSH key that would be used on github actions
 
 ### Make sure to save these keys somewhere safe and easy for you to access
 to save you from the troubles of having to generate a new one and updating your secrets.
