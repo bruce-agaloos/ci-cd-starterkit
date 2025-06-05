@@ -4,7 +4,7 @@ This repository is a compilation of scripts and essential files that your going 
 
 Feel free to use this as a guide to get you started, have a better prompt, and modify it to you own needs. 
 
-> vibe coding at it's finest! °˖✧◝(⁰▿⁰)◜✧˖°
+> vibe coding at its finest! °˖✧◝(⁰▿⁰)◜✧˖°
 
 To get started, you'll going to need to generate your very own `ssh key` as this would serve as a password/credentials of your device.
 
