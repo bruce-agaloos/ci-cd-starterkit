@@ -1,4 +1,4 @@
-# CI/CD StarterKit
+# Getting Started
 
 This repository is a compilation of scripts and essential files that your going to need for deploying on staging or production environments.
 
