@@ -1,0 +1,48 @@
+name: CI/CD Pipeline Template
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH and Add Server to Known Hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.HOST }} > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Test SSH Connection (Debug)
+        run: |
+          ssh -v ${{ secrets.USER }}@${{ secrets.HOST }} "echo SSH connection successful"
+
+      - name: Ensure target directory exists
+        run: |
+          ssh ${{ secrets.USER }}@${{ secrets.HOST }} "mkdir -p /home/${{ secrets.USER }}/htdocs/${{ secrets.USER }}.${{ secrets.DOMAIN }} || true"
+
+      - name: Sync files to server
+        run: |
+          rsync -avz --delete --no-times \
+          --exclude '.env' \
+          . ${{ secrets.USER }}@${{ secrets.HOST }}:/home/${{ secrets.USER }}/htdocs/${{ secrets.USER }}.${{ secrets.DOMAIN }}
+
+      - name: Install dependencies on the server
+        run: |
+          ssh ${{ secrets.USER }}@${{ secrets.HOST }} "\
+          cd /home/${{ secrets.USER }}/htdocs/${{ secrets.USER }}.${{ secrets.DOMAIN }} && \
+          # Add your installation commands here, e.g., npm install, pip install -r requirements.txt, etc.
+
+      - name: Run app
+        run: |
+          ssh ${{ secrets.USER }}@${{ secrets.HOST }} "\
+          cd /home/${{ secrets.USER }}/htdocs/${{ secrets.USER }}.${{ secrets.DOMAIN }} && \
+          # Add your run commands here, e.g., npm start, python app.py, etc.
