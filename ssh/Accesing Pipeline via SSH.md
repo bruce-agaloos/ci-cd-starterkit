@@ -29,6 +29,6 @@ If the connection is successful, you'll receive a welcome message. For reference
 * CloudPanel:      https://ip-address:port
 * CloudPanel CLI:  clpctl
 
-Last login: Fri May  9 15:59:47 2025 from 120.29.69.239
+Last login: Fri May  9 15:59:47 2025 from some-ip-address
 site-user@ip-address:~$ 
 ```
